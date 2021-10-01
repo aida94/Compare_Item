@@ -1,0 +1,19 @@
+@import "./../../shared/styles/breakpoint";
+
+.productImage {
+  min-height: 8em;
+}
+
+.trashIcon {
+  cursor: pointer;
+}
+
+.priceText {
+  font-weight: bold;
+}
+
+@media (max-width: $tablet) {
+  .productImage {
+    max-height: 5em;
+  }
+}

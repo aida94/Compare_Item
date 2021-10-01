@@ -1,0 +1,22 @@
+@import "./../../shared/styles/breakpoint";
+
+.optionInput {
+  width: 15em;
+}
+
+.checkInput {
+  cursor: pointer;
+}
+
+@media (max-width: $tablet) {
+  .optionInput {
+    width: 12em;
+  }
+}
+
+@media (max-width: $mobile) {
+  .optionInput {
+    width: 10em;
+    font-size: small;
+  }
+}

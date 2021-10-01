@@ -1,0 +1,13 @@
+@import "./../../../shared/styles/breakpoint";
+
+.badgeImage {
+  margin-right: 0.5em;
+}
+
+@media (max-width: $tablet) {
+  .badgeImage {
+    max-width: 2em;
+    max-height: 2em;
+    margin-right: 0.1em;
+  }
+}

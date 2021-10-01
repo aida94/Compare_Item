@@ -1,0 +1,41 @@
+@import "./../../shared/styles/breakpoint";
+
+.leftSidebar {
+  margin-right: 1em;
+  min-width: 20em;
+  width: 20em;
+}
+
+.noBottomBorder {
+  border-bottom: none;
+}
+
+.rightBorder {
+  border-right: 1px solid grey;
+}
+
+.productWidth {
+  width: 20em;
+}
+
+.boldText {
+  font-weight: bold;
+}
+
+@media (max-width: $tablet) {
+  .leftSidebar {
+    min-width: 15em;
+    width: 15em;
+  }
+
+  .productWidth {
+    width: 10em;
+  }
+}
+
+@media (max-width: $mobile) {
+  .leftSidebar {
+    min-width: 10em;
+    width: 10em;
+  }
+}
