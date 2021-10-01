@@ -1,28 +1,31 @@
-# Getting Started with Create React App
+# Compare Products App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Documentation
 
-## Available Scripts
+<b>Compare Products Appp</b> is a simple application that alows user to compare products. From this list of products users can hide or show specific product.
+I decided to build it in React and Typescript. 
 
-In the project directory, you can run:
+The main reason for using typescript is to have a clear data model from the beginning of the implementation. Also make the application more easier to read and debug. 
 
-### `yarn start`
+For better design I choose to use Bootstrap. It is easy to create layouts and reduce time working with Css. The class names are very descriptive. Among this I used Sass module for specific style. I configured tablet and mobile brekpoints to make application more responsible.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Among other folders I created an atomic-UI folder to include all reusable components. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+After finished the implementation I added some test mostly for reusable component. For tests I used React test library.
 
-### `yarn test`
+Details:
+<li>Name of the selected stop</li>
+<li>An icon that shows if this stop is favorite or not, which is editable</li>
+<li>Departures component lists departures for the selected stop that have not occured yet</li>
+<li>Arrivals component lists arrivals for the selected stop that have not occured yet</li>
+<li>Departures/Arrivals info: line name, direction/provenance, remaining time, transport product, delay</li>
+</br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To have easier access to his favorite stops user can save the stop and all his favorite stops will be displayed in the marked stops in Homepage.</br>
+He can remove them from his favorite list at any time.</br></br>
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I also worked with <b> Offline Version </b> of the app. I added Angular Service Worker for this.</br>
+When user is online in each request I handle te set in local storage all the information. When user is offline in each request I looked if in local storage have corresponding information, if yes return this data, esle throw error 
 
 
 
@@ -33,10 +36,18 @@ It correctly bundles React in production mode and optimizes the build for the be
     $ cd Compare_Item
     $ npm install
     
-## Features   
+ ### Start & watch
 
-<li>Axios</li>
-<li>BootStrap</li>
-<li>Classnames</li>
-<li>Font Awesome</li>
-<li>Typescript</li>
+    $ npm start
+
+### Simple build for production
+
+    $ ng build
+    
+## Requirements Dependencies  
+<li>axios</li>
+<li>bootstrap</li>
+<li>classnames</li>
+<li>font-awesome</li>
+<li>node-sass</li>
+<li>typescript</li>
