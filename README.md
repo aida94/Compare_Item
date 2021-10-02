@@ -2,16 +2,13 @@
 
 ## Documentation
 
-<b>Compare Products Appp</b> is a simple application that alows user to compare products. From this list of products users can hide or show specific product.
-I decided to build it in React and Typescript. 
+<b>Compare Products Appp</b> is a simple application that alows Users to compare products. From a list of products users can hide or show specific product.
 
-The main reason for using typescript is to have a clear data model from the beginning of the implementation. Also make the application more easier to read and debug. 
+I decided to build it in React and Typescript. The main reason for using typescript is to have a clear data model from the beginning of the implementation. Also make the application more easier to read and debug. 
 
-For better design I choose to use Bootstrap. It is easy to create layouts and reduce time working with Css. The class names are very descriptive. Among this I used Sass module for specific style. I configured tablet and mobile brekpoints to make application more responsible.
+For better design I choose to use Bootstrap. It is easy to create layouts and reduce time working with Css. The class names are very descriptive. Among this I used Sass Module for specific style. I configured tablet and mobile brekpoints to make application more responsible.
 
-Among other folders I created an atomic-UI folder to include all reusable components. 
-
-After finished the implementation I added some test mostly for reusable component. For tests I used React test library.
+Among other folders I created an atomic-UI folder to include all reusable components. After finished the implementation I added some test mostly for reusable component. For tests I used React Testing Library.
 
 
 ## Install
